@@ -1,0 +1,29 @@
+section.container{
+    display: block;
+    width: 100%;
+    clear: both;
+    float: left;
+}
+div[class*='cont_']{
+    float: left;
+}
+.cont_5{width: 5%;}
+.cont_10{width: 10%;}
+.cont_15{width: 15%;}
+.cont_20{width: 20%;}
+.cont_25{width: 25%;}
+.cont_30{width: 30%;}
+.cont_35{width: 35%;}
+.cont_40{width: 40%;}
+.cont_45{width: 45%;}
+.cont_50{width: 50%;}
+.cont_55{width: 55%;}
+.cont_60{width: 60%;}
+.cont_65{width: 65%;}
+.cont_70{width: 70%;}
+.cont_75{width: 75%;}
+.cont_80{width: 80%;}
+.cont_85{width: 85%;}
+.cont_90{width: 90%;}
+.cont_95{width: 95%;}
+.cont_100{width: 100%;}

@@ -1,0 +1,160 @@
+.input_form_format{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input_form_format input,select,textarea{
+    display: block;
+    float: left;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(250,250,252,1);
+    border: 1px solid rgba(230,230,240,1);
+    box-sizing: border-box;
+    padding-left:5%;
+    text-align: left;
+    color: rgba(135,139,141,1);
+}
+.input_form_format span{
+    display: block;
+    float: left;
+    width: 100%;
+    color:rgba(0,33,51,1);
+    font-weight: bolder;
+    text-align: left;
+}
+
+.form_format{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255,255,255);
+    display: flex;
+    flex-direction: column;
+}
+
+.title_form_format{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 20%;
+    font-size: 30%;
+    border-bottom: 1px solid rgba(230,230,240,1);
+    color: rgba(0,33,51,1);
+    font-weight: bolder;
+    box-sizing: border-box;
+    padding-bottom: 2.5%;
+}
+
+
+#tarefa_button button{
+    width: 50%;
+    height: 25%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.button_true{
+    background-color: rgba(0,231,91,1);
+    
+}
+.button_false{
+    background-color: rgba(227,61,61,1);
+}
+
+.links_options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.links_options > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(0,231,91,1);
+}
+
+.links_options > a  img{
+    height: 50%;
+    width: auto;
+    transform: rotate(180deg);
+}
+
+.user{
+    background-color: rgba(124, 117, 117, 0.6);
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
+
+/* REFERENTE A LOGIN*/
+
+.containerInput_form_format{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.inputLogin_form_format{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.inputLogin_form_format input{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding:5%;
+    background-color: transparent;
+}
+.inputLogin_form_format span{
+    position: absolute;
+    display: none;
+}
+
+.buttonLogin_form_format{
+    display: block;
+    width: 100%;
+    height: 10%;
+    border-radius: 10px;
+    font-family: 'Archivo', sans-serif;
+    cursor: pointer;
+    
+}
+.buttonLogin_false{
+    background-color: rgba(220,220,229,1);
+    color: rgba(156,152,166,1);
+}
+
+.titleLogin_form_format{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login_logo_format{
+    position: relative;
+    background-color: rgba(0,33,53,1);
+}
+
+.login_logo_format header{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20%;
+    height: 50%;
+}

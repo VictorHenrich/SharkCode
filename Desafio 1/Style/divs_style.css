@@ -1,0 +1,42 @@
+section.container{
+    display: block;
+    width: 100%;
+    height: 700px;
+    font-family: 'Poppins', sans-serif;
+}
+
+div[class*='div_']{
+    float: left;
+    height: 100%;
+}
+
+div.div_1{
+    width: 70%;
+    background-color: rgb(255,75,86)
+}
+
+div.div_2{
+    width: 30%;
+    background-color:rgb(246,240,240);
+}
+
+div.div_1 > header{height: 60%; width: 100%;}
+div.div_1 > figure{height: 40%; width: 100%;}
+
+div.div_1 > header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:rgb(255,255,255);
+}
+div.div_1 > header > h1,h2{width: 50%;font-weight: bolder;}
+div.div_1 > header > h1{font-size: 48px;margin-bottom: 5%;}
+div.div_1 > header > h2{font-size: 38px;}
+
+div.div_1 > figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.div_1 > figure > img{max-height: 100%;width: auto;}

@@ -1,0 +1,112 @@
+
+.container{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+.options{
+    height: 30%;
+}
+
+.data{
+    height: 70%;
+}
+
+.text{
+    height: 15%;
+}
+
+.form_format{
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: absolute;
+    top: -20%;
+    height: 120%;
+    box-sizing: border-box;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    border: 1px solid rgba(230,230,240,1);
+}
+
+.input_form_format > span{
+    font-size: 20px;
+}
+
+.input_max{
+    min-height: 60%;
+}
+
+.input_min{
+    max-height: 70%;
+}
+.group_form_format{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12%;
+    background-color: red;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.group_form_format .input_form_format{
+    height: 100%;
+}
+
+.checklist{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.input_check{
+    display: flex;
+    position: relative;
+    height: 15%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.checklist input[type *="text"]{
+    top: 0px;
+    left: 0px;
+    padding-left: 7%;
+    z-index: 0;
+    height: 100%;
+    width: 75%;
+}
+
+.input_check button{
+    height: 100%;
+    background-color: transparent;
+}
+
+#checkbox{
+    display: block;
+    width: 10%;
+    height: 70%;
+    background-color: blue;
+}
+
+.select{
+    position: relative;
+    height: 12%;
+}
+
+#tarefa_button{
+    height: 20%;
+    position: absolute;
+    right: -5%;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+

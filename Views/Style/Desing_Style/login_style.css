@@ -1,0 +1,104 @@
+
+.div_4{
+    background-color: rgba(255,255,255,1);
+}
+.div_6{
+    background-color: rgba(0,33,51,1);
+}
+
+#logo_login{
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+figure[class*='login_img']{
+    width: 70%;
+    height: 50%;
+    display: flex;
+}
+
+.login_img_1{
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.login_img_2{justify-content: center;align-items: center;}
+.login_img_2 > img{
+    height: 90%;
+    width: auto;
+}
+.title_login{
+    display: block;
+    width: 100%;
+    font-size: 250%;
+    font-weight: bolder;
+    text-align: left;
+    color:rgb(255,255,255);
+    font-family: 'Poppins', sans-serif;
+}
+
+.inputText_form_format input{
+    border: 1px solid #E6E6F0;
+    background-color: #FAFAFC;
+}
+.inputText_form_format input:focus{
+    border-color: rgba(0,33,51,1);
+}
+
+#link_format_login{
+    display: flex;
+    width: 80%;
+    height:6%;
+    justify-content: space-between;
+    font-size: 13px;
+    color:rgba(156,152,166,1);
+}
+#checkbox{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: inherit;
+
+}
+#checkbox > label{
+    display: inline-block;
+    height: 80%;
+    width: 15%;
+    background-color: rgb(255,255,255);
+    margin-right: 5%;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 2px solid #E6E6F0;
+}
+
+#checkbox > label > input{display: none;}
+#link_format_login a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#link_format_login a:hover{
+    color:rgba(0,33,51,1);
+    text-decoration: underline;
+} 
+
+.form_button_format{
+    width: 80%;
+    height: 10%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 110%;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bolder;
+    background-color: rgba(220,220,229,1);
+    color:rgb(135,139,141,1);
+}

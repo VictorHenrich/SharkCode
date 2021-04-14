@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <link rel="stylesheet" type="text/css" href="Style/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="Style/divs_style.css"/>
+    <link rel="stylesheet" type="text/css" href="Style/form_style.css"/>
+    <link rel="stylesheet" type="text/css" href="Style/mobile.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <div class="div_1">
+            <header>
+                <h1>Monitora.com</h1>
+                <h2>Tornando seu monitoramento mais descomplicado</h2>
+            </header>
+            <figure>
+                <img src="ImagemDesafio1/SVG/ImagemDesafio2.svg">
+            </figure>
+        </div>
+        <div class="div_2">
+            <form>
+                <header>
+                    <span>Fazer login</span>
+                </header>
+                <div class="input_format">
+                    <span>E-mail</span>
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <div class="input_format">
+                    <span>Senha</span>
+                    <input type="password" placeholder="Senha">
+                    <figure class="hidden">
+                        <img src="ImagemDesafio1/visao.svg">
+                    </figure>
+                </div>
+                <div id="div_links">
+                    <label for="lembrar">
+                        <span class="no_check">&#10004</span>
+                        <input type="checkbox" name="lembrar">
+                        Lembrar-me
+                    </label>
+                    <a href="">Esqueci minha senha</a>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("resize",responseWindow);
+        window.addEventListener("load",responseWindow);
+
+        function responseWindow(){
+            document.getElementsByClassName("container")[0].style.height = this.innerHeight + "px";
+        }
+
+        (function(){
+            let $figure = document.querySelector(".input_format figure");
+
+            function eventImg(e){
+                if(e.target.nodeName === "IMG"){
+                    let $img = e.target;
+                    let $input = this.parentNode.querySelector("input");
+                    if(this.classList.value.indexOf("hidden") >= 0){
+                        this.classList.remove("hidden");
+                        this.classList.add("show");
+                        $img.setAttribute("src","ImagemDesafio1/privado.svg");
+                        $input.setAttribute("type","text");
+                    }else{
+                        this.classList.remove("show");
+                        this.classList.add("hidden");
+                        $img.setAttribute("src","ImagemDesafio1/visao.svg");
+                        $input.setAttribute("type","password");
+                    }
+                }
+            }
+            $figure.addEventListener("click",eventImg.bind($figure));
+        })();
+
+        (function(){
+            document.getElementById("div_links").addEventListener("click",function(){
+                let $input = this.querySelector("input[type*='checkbox']");
+                let $check = this.querySelector("span");
+                if($check.classList.value.indexOf("no_check") >=0){
+                    $check.classList.remove("no_check");
+                    $check.classList.toggle("check");
+                    $input.checked = true;
+                }else{
+                    $check.classList.remove("check");
+                    $check.classList.toggle("no_check");
+                    $input.checked = false;
+                }
+            });
+        })();
+        (function(){
+            let $inputs = document.querySelectorAll(".input_format input");
+            function eventInput(){
+                if(this.value.length > 0){
+                    this.setAttribute("id","showSpan");
+                    this.parentNode.querySelector("span").style.display="flex";
+                }else{
+                    this.setAttribute("id","closeSpan");
+                    this.parentNode.querySelector("span").style.display="none";
+                }          
+            }
+
+            function eventFocusIn(e){
+                this.parentNode.setAttribute("id","input_focus");
+            }
+            function eventFocusOut(){
+                this.parentNode.setAttribute("id","");
+            }
+
+            Array.prototype.forEach.call($inputs,(element)=>{
+                element.addEventListener("keyup",eventInput.bind(element));
+                element.addEventListener("focusin",eventFocusIn.bind(element));
+                element.addEventListener("focusout",eventFocusOut.bind(element));
+            });
+
+        })();
+    </script>
+</body>
+</html>

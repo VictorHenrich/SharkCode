@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHARKCODE || Perfil</title>
+    <link rel="stylesheet" type="text/css" href="../Style/grid.css"/>
+    <link rel="stylesheet" type="text/css" href="../Style/grid2.css"/>
+    <link rel="stylesheet" type="text/css" href="../Style/format.css"/>
+    <link rel="stylesheet" type="text/css" href="../Style/Desing_Style/form_style.css"/>
+    <link rel="stylesheet" type="text/css" href="../Style/Desing_Style/page_style.css"/>
+    <link rel="stylesheet" type="text/css" href="../Style/Desing_Style/perfil_style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="div_10 options">
+            <img src="IMG/Background.svg" class="background">
+            <nav class="div_10 link_page_format">
+                <span class="cont_25 links">
+                    <a id="logout">
+                        <img src="IMG/logout.svg">
+                    </a>
+                </span>
+                <span class="cont_25 links">
+                    Meu perfil
+                </span>
+                <span id="link_logo" class="cont_25 links">
+                    <img src="IMG/Logo.svg">
+                </span>
+            </nav>
+            <div class="cont_20 photo_format">
+                <figure class="div_6">
+                    <span class="cont_25 camera">
+                        <img src="IMG/Camera.svg">
+                    </span>
+                </figure>
+                <h2 class="title_photo div_10" id="nomeUser">Usuário</h2>
+            </div>
+        </div>
+        <div class="div_10 data">
+            <form class="form_format div_5">
+                <div class="input">
+                    <header class="div_10 title_form_format">
+                        <h1>Seus dados</h1>
+                    </header>
+                    <label class="input_form_format cont_45 input-format">
+                        <span>Nome</span>
+                        <input type="text" id="nome">
+                    </label>
+                    <label class="input_form_format cont_45 input-format">
+                        <span>Sobrenome</span>
+                        <input type="text" id="sobrenome">
+                    </label>
+                    <label class="input_form_format cont_60 input-format">
+                        <span>E-mail</span>
+                        <input type="text" id="email">
+                    </label>
+                    <label class="input_form_format cont_30 input-format">
+                        <span>Whatsapp</span>
+                        <input type="text" id="tel">
+                    </label>
+                    <label class="input_form_format cont_100 textArea-format">
+                        <span>Biografia</span>
+                        <input type="text" id="bio"/>
+                        <!--<textarea type="text" id="bio" cols="50"></textarea> -->
+                    </label>
+                </div>
+                <div class="div_10 button_form_format">
+                    <figure class="div_5 b_format" id="aviso_button">
+                        <img src="IMG/Atenção.svg">
+                        <span>
+                            Preencha todos os campos corretamente
+                        </span>
+                    </figure>
+                    <figure class="div_5 b_format">
+                        <button type="submit">
+                            Salvar cadastro
+                        </button>
+                    </figure>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../JS/perfilUsuario.js" type="module"></script>
+</body>
+</html>

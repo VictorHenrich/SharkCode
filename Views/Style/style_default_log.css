@@ -1,0 +1,157 @@
+
+
+.container{
+    font-family: 'Poppins', sans-serif;
+}
+
+div.div_4{
+    height: 100%;
+}
+div.div_6{
+    height: 100%;
+}
+
+/*-----------------REFERENTE AO FORMULÁRIO----------------------- */
+
+form.form_format{
+    display: flex;
+    position: relative;
+    left: 7.5%;
+    top:10%;
+    width: 85%;
+    height: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+label.inputText_form_format{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 15%;
+    background-color: rgba(250,250,252,1);
+    border-radius: 10px;
+    position: relative;
+    top: 0px;
+    background-color: transparent;
+}
+.inputText_form_format  > figure{
+    width: 10%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    right: 5%;
+}
+
+.inputText_form_format  > figure img{
+    height: auto;
+    width: 80%;
+    cursor: pointer;
+}
+label.inputText_form_format input{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+
+#link_form_format{
+    display: inline-block;
+    width: 80%;
+    text-align: right;
+    position: relative;
+    font-size: 90%;
+    bottom: 3%;
+    color:rgb(0,231,91,1);
+}
+#link_form_format:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+span#title_form_format{
+    width: 80%;
+    text-align: left;
+    font-size: 150%;
+    font-weight: bolder;
+    color:rgba(0,231,91,1);
+}
+
+span.buttons_form_format{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 5%;
+}
+
+span.buttons_form_format > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 10%;
+    border-radius: 10px;
+    background-color: rgba(0,33,53,1);
+    color: rgba(255,255,255,1);
+    cursor: pointer;
+    transition: background .1s;
+    text-decoration: none;
+}
+span.buttons_form_format > button:hover{
+    background-color: rgba(0,231,91,1);
+}
+
+
+span.buttons_form_format >button> img{
+    width: auto;
+    height: 40%;
+}
+
+.inputText_form_format > span{
+    display: none;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    color: rgb(150,150,150);
+}
+
+span.input_active{display: inline-block;font-size: 80%;}
+
+/*---------------------------REFERENTE A LOGO----------------*/
+figure.logo_shark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 70%;
+    position: relative;
+    left: 5%;
+    top: 15%;
+    font-family: 'Poppins', sans-serif;
+}
+figure.logo_shark > img{
+    width: inherit;
+    height: auto;
+    position: absolute;
+    top: 10%;
+}
+
+figure.logo_shark > h1{
+    display: block;
+    width: inherit;
+    text-align: left;
+    color: white;
+    font-size: 200%;
+    box-sizing: border-box;
+    font-weight: bolder;
+    color: rgba(0,33,53,1);
+}
+

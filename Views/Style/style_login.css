@@ -1,0 +1,8 @@
+.buttons_form_format{
+    justify-content: space-between;
+}
+div.div_4{background-color: rgb(0,81,130,1);}
+div.div_6{background-color: #E5E5E5;}
+label.inputText_form_format input:focus{
+    border: 2px solid rgb(0,231,91,1);
+}

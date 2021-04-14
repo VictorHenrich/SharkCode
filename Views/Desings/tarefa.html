@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHARKCODE || ADICIONAR TAREFA</title>
+    <link rel="stylesheet" type="text/css" href="../Style/grid.css"/>
+    <link rel="stylesheet" type="text/css" href="../Style/format.css"/>
+    <link rel="stylesheet" type="text/css" href="../Style/grid2.css"/>
+    <link rel="stylesheet" type="text/css" href="../Style/Desing_Style/form_style.css"/>
+    <link rel="stylesheet" type="text/css" href="../Style/Desing_Style/page_style.css"/>
+    <link rel="stylesheet" type="text/css" href="../Style/Desing_Style/tarefa_style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <div class="div_10 options">
+            <img src="IMG/Background.svg" class="background">
+            <span class="links_options div_8">
+                <a class="cont_5 user">
+
+                </a>
+                <a class="cont_5">
+                    <img src="IMG/logout.svg">
+                </a>
+            </span>
+        </div>
+        <div class="div_10 data">
+            <form class="form_format div_6">
+                <label class="input_form_format text cont_100">
+                    <span>Nome da Tarefa</span>
+                    <input type="text" name="nome_tarefa" class="input_max"/>
+                </label>
+                <label class="input_form_format text div_10">
+                    <span>Descrição</span>
+                    <input type="text" name="descricao" class="input_max"/>
+                </label>
+                <label class="div_10 group_form_format">
+                    <label class="input_form_format cont_25">
+                        <span>Tempo estimado</span>
+                        <input type="text" class="input_max" name="tempoEstimado">
+                    </label>
+                    <label class="input_form_format cont_25">
+                        <span>Tempo trabalhado</span>
+                        <input type="text" class="input_max" name="tempoTrabalhado">
+                    </label>
+                    <label class="input_form_format cont_25">
+                        <span>Data de Entrega</span>
+                        <input type="date" class="input_max" name="data">
+                    </label>
+                </label>
+                <label class="input_form_format checklist div_10">
+                    <span>checklist</span>
+                    <div class="div_10 input_check">
+                        <span id="checkbox">
+                            <div id="background"></div>
+                            <img src="IMG/certo.svg">
+                            <input type="checkbox">
+                        </span>
+                        <input type="text" name="check">
+                        <button type="button" class="cont_5" id="adicionar_check">
+                            <img src="IMG/excluir_tarefa_check.svg">
+                        </button>
+                    </div>
+                    
+                </label>
+                <label class="input_form_format cont_25 select">
+                    <span>Situação</span>
+                    <select class="input_max" name="status">
+                        <option value="desenvolvimento">Em desenvolvimento</option>
+                        <option value="analise">Em Análise</option>
+                        <option value="cancelado">Cancelado</option>
+                        <option value="aprovado">Aprovado</option>
+                    </select>
+                </label>
+                <span id="tarefa_button" class="div_1">
+                    <button type="submit" class="button_true"><img src="IMG/concluido_tarefa.svg"/></button>
+                    <button type="button" class="button_false"><img src="IMG/excuido_tarefa.svg"/></button>
+                <span>
+            </form>
+        </div>
+    </section>
+    <script type="module" src="../JS/setTarefa.js"></script>
+</body>
+</html>

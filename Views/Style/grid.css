@@ -1,0 +1,18 @@
+section.container{
+    width: 100%;
+    clear: both;
+    float: left;
+}
+div[class*='div_']{
+    float: left;
+}
+.div_1{width: 10%;}
+.div_2{width: 20%;}
+.div_3{width: 30%;}
+.div_4{width: 40%;}
+.div_5{width: 50%;}
+.div_6{width: 60%;}
+.div_7{width: 70%;}
+.div_8{width: 80%;}
+.div_9{width: 90%;}
+.div_10{width: 100%;}

@@ -1,0 +1,32 @@
+{
+  "user": [
+    {
+      "nome": "Victor",
+      "sobrenome": "Henrich",
+      "email": "victorhenrich993@gmail.com",
+      "tel": "36232675",
+      "bio": "Meu nome é victor henrich e adoro programaçção Web bla bla bla bla",
+      "senha": "henrich123",
+      "id": 228
+    },
+    {
+      "nome": "Staphanie",
+      "sobrenome": "Machado",
+      "email": "stephaniemachadow@gmail.com",
+      "tel": "36232675",
+      "bio": "Meu nome é Stephanie machado e amo meu namorado Victor que faz programação Web",
+      "senha": "123",
+      "id": 415
+    },
+    {
+      "nome": "Rodolfo",
+      "sobrenome": "Da silva Henrich",
+      "email": "rodolfo@gmail.com",
+      "tel": "36232675",
+      "bio": "",
+      "senha": "123",
+      "id": 184
+    }
+  ],
+  "task": []
+}
